@@ -1,0 +1,24 @@
+
+<div class="menu-card p-4 flex" [class.collapsed]="closedMenu">
+    <div id="menu-toggle" class="flex mb-2">
+        <p-button class="menu-button" (click)="closedMenu = !closedMenu" icon="pi pi-bars"/>
+    </div>
+    <div class="menu-item">
+        <p-button class="menu-button" icon="pi pi-book"/>
+        <p-tree class="title-text" [value]="plannerTree"></p-tree>
+    </div>
+    <div class="menu-item">
+        <p-button class="menu-button" icon="pi pi-star"/>
+        <p-tree class="title-text" [value]="hobbyTree"></p-tree>
+    </div>
+    <div class="menu-item">
+        <p-button class="menu-button" icon="pi pi-calendar"/>
+        <p-tree class="title-text" [value]="calendarTree"></p-tree>
+    </div>
+    <div class="menu-item">
+        <p-button class="menu-button" icon="pi pi-images"/>
+        <p-tree class="title-text" [value]="galleryTree"></p-tree>
+    </div>
+</div> 
+
+
